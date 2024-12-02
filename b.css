@@ -1,0 +1,152 @@
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #5c5c5c;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 10px 50px;
+  }
+/* General styles for the container and the row */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Column styles */
+.col-sm-4 {
+  flex: 1 1 30%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on columns */
+.col-sm-4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.person {
+  border: 5px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.person:hover {
+  transform: scale(1.1);
+}
+.collapse.show {
+  display: block;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+strong {
+  font-size: 20px;
+  color: #333;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .col-sm-4 {
+      flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-4 {
+      flex: 1 1 100%;
+      padding: 15px;
+  }
+
+  .person {
+      width: 200px;
+      height: 200px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+}
+.bg-1 {
+  background: #cacacb;
+}
+.bg-1 h3 {
+  color: #fff;
+}
+.bg-1 p {
+  font-style: italic;
+}
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+.thumbnail p {
+  margin-top: 15px;
+  color: #555;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+}
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+.modal-header, h4, .close {
+  background-color: #333;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+.modal-header, .modal-body {
+  padding: 40px 50px;
+}
+.nav-tabs li a {
+  color: #777;
+}
+#map {
+  width: 100%;
+  height: 350px;
+}  
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 2px;
+}
+footer a {
+  color: #f5f5f5;
+}
+footer a:hover {
+  color: #777;
+  text-decoration: none;
+}  
+.form-control {
+  border-radius: 0;
+}
+textarea {
+  resize: none;
+}
+.carousel-item h3{
+  color: white;
+}
